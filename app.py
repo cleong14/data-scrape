@@ -1,6 +1,6 @@
 import urllib2
-#import requests as req #windows
-# import urllib.request #windows
+#import requests as req #windows py3
+#import urllib.request #windows
 from bs4 import BeautifulSoup
 
 #1 getting web page:
@@ -8,9 +8,9 @@ web_page = 'https://finance.yahoo.com/quote/FB?p=FB'
 
 #query the website and return the html to the variable page:
 page = urllib2.urlopen(web_page)
-# page = req.get(web_page)
+#page = req.get(web_page)
 #urllib.request.Request(web_page) #windows
-# print(page)
+#print(page)
 
 soup = BeautifulSoup(page, 'html.parser')
 #soup = BeautifulSoup(page.text, 'html.parser')
