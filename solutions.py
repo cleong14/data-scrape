@@ -1,5 +1,7 @@
 # #import libraries/modules
 import urllib2
+#import requests as req #windows for py3
+#import urllib.request #windows
 from bs4 import BeautifulSoup #from keyword used to import specific attributes or functions
 
 # #1 getting the data
@@ -9,6 +11,8 @@ web_page = 'https://finance.yahoo.com/quote/FB?p=FB'
 
 # #query the website and return the html to the variable page:
 page = urllib2.urlopen(web_page)
+#page = req.get(web_page)
+#urllib.request.Request(web_page) #windows
 print(page)
 
 # #parse the html page using Beautiful Soup and store in variable soup:
