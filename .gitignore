@@ -1,0 +1,6 @@
+.Python
+bin/
+data-scrape/
+include/
+lib/
+pip-selfcheck.json
